@@ -16,9 +16,13 @@ constexpr char *password = "WIFI_PASSWORD";
 constexpr char *mqtt_server = "XXX.XXX.XXX.XXX";
 constexpr char *mqtt_user = "MQTT_USER";
 constexpr char *mqtt_pass = "MQTT_PASSWORD";
-constexpr char *topic_energy = "energy1/Energy";
+// Change name for each sensor
+// energy1, energy2 ...
+constexpr char *topic_TotalPulses = "energy1/TotalPulses";
+constexpr char *topic_setTotalPulses = "energy1/setTotalPulses";
 // Pulses per kWh
-constexpr char *topic_ppk = "energy1/ppk";
+constexpr char *topic_SendEvery = "energy1/SendEveryPulses";
+constexpr char *topic_setSendEvery = "energy1/setSendEveryPulses";
 constexpr uint16_t mqtt_port = 1883;
 
 #ifdef DEBUG
